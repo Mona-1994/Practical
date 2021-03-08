@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Activity.AddUserActivity">
+
+    <ImageView
+        android:id="@+id/ivStudentImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"/>
+
+
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        android:textSize="20dp"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card"/>
+
+    <EditText
+        android:id="@+id/edtStudentNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:ellipsize="end"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/card"/>
+
+
+    <EditText
+        android:id="@+id/edtStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card">
+
+        <EditText
+            android:id="@+id/edtStudentAddress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:ellipsize="end"
+            android:textSize="20dp"
+            android:background="@null"/>
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person_pin_circle_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SUBMIT"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="UPDATE"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
